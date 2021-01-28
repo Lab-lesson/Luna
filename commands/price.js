@@ -253,7 +253,7 @@ exports.run = async(client, message, args, level) => {
 					landingPad4 = landingPad4[1].split(">")
 					// output += "\nLanding Pad :: " + landingPad[1].replace("&#039;", "'")
 
-					lastUpdate4 = commodityPage[i + 37].split("<")
+					lastUpdate4 = commodityPage[i + 36].split("<")
 					lastUpdate4 = lastUpdate4[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
 
@@ -281,7 +281,7 @@ exports.run = async(client, message, args, level) => {
 					landingPad5 = landingPad5[1].split(">")
 					// output += "\nLanding Pad :: " + landingPad[1].replace("&#039;", "'")
 
-					lastUpdate5 = commodityPage[i + 59].split("<")
+					lastUpdate5 = commodityPage[i + 56].split("<")
 					lastUpdate5 = lastUpdate5[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
 					/*====================================================================*/
@@ -308,7 +308,7 @@ exports.run = async(client, message, args, level) => {
 					landingPad6 = landingPad6[1].split(">")
 					// output += "\nLanding Pad :: " + landingPad[1].replace("&#039;", "'")
 
-					lastUpdate6 = commodityPage[i + 76].split("<")
+					lastUpdate6 = commodityPage[i + 82].split("<")
 					lastUpdate6 = lastUpdate6[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
 
