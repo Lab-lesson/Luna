@@ -51,7 +51,7 @@ exports.run = async(client, message, args, level) => { // eslint-disable-line no
 	bigOleMessage += `Last Seen          :: ${place.system}\n`;
 	bigOleMessage += `When               :: ${place.date}\n`;
 	bigOleMessage += `In Ship            :: ${place.shipType}\n`;
-	bigOleMessage += `Distance from Home :: ${x}ly`;
+	bigOleMessage += `Distance from Sol :: ${x}ly`;
 	message.channel.send(bigOleMessage, {
 		code: "asciidoc"
 	});
