@@ -286,29 +286,29 @@ exports.run = async(client, message, args, level) => {
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
 					/*====================================================================*/
 
-					system6 = commodityPage[i + 67].split("<")
+					system6 = commodityPage[i + 64].split("<")
 					system6 = system6[1].split(">")
-					system6webpage = commodityPage[i + 67].split("\"")
+					system6webpage = commodityPage[i + 64].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
 
-					station6 = commodityPage[i + 65].split("<")
+					station6 = commodityPage[i + 62].split("<")
 					station6 = station6[1].split(">")
-					station6webpage = commodityPage[i + 65].split("\"")
+					station6webpage = commodityPage[i + 62].split("\"")
 					// output += "\nStation :: " + station[1].replace("&#039;", "'")
 
-					currentPrice6 = commodityPage[i + 69].split("<")
+					currentPrice6 = commodityPage[i + 66].split("<")
 					currentPrice6 = currentPrice6[1].split(">")
 					// output += "\nCurrent Price :: " + currentPrice[1].replace("&#039;", "'")
 
-					demand6 = commodityPage[i + 75].split("<")
+					demand6 = commodityPage[i + 72].split("<")
 					demand6 = demand6[1].split(">")
 					// output += "\nDemand :: " + demand[1].replace("&#039;", "'")
 
-					landingPad6 = commodityPage[i + 78].split("<")
+					landingPad6 = commodityPage[i + 75].split("<")
 					landingPad6 = landingPad6[1].split(">")
 					// output += "\nLanding Pad :: " + landingPad[1].replace("&#039;", "'")
 
-					lastUpdate6 = commodityPage[i + 82].split("<")
+					lastUpdate6 = commodityPage[i + 79].split("<")
 					lastUpdate6 = lastUpdate6[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
 
