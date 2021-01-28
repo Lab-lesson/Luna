@@ -259,17 +259,17 @@ exports.run = async(client, message, args, level) => {
 
 					/*====================================================================*/
 
-					system5 = commodityPage[i + 45].split("<")
+					system5 = commodityPage[i + 43].split("<")
 					system5 = system5[1].split(">")
-					system5webpage = commodityPage[i + 45].split("\"")
+					system5webpage = commodityPage[i + 43].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
 
-					station5 = commodityPage[i + 43].split("<")
+					station5 = commodityPage[i + 41].split("<")
 					station5 = station5[1].split(">")
-					station5webpage = commodityPage[i + 43].split("\"")
+					station5webpage = commodityPage[i + 41].split("\"")
 					// output += "\nStation :: " + station[1].replace("&#039;", "'")
 
-					currentPrice5 = commodityPage[i + 47].split("<")
+					currentPrice5 = commodityPage[i + 45].split("<")
 					currentPrice5 = currentPrice5[1].split(">")
 					// output += "\nCurrent Price :: " + currentPrice[1].replace("&#039;", "'")
 
