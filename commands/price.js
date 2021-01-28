@@ -136,6 +136,11 @@ exports.run = async(client, message, args, level) => {
 		var commodityPage = price(commID)
 		commodityPage = commodityPage.split("\n")
 		var count = 0
+		
+		for (var i = 0; i < commodityPage.length; i++) {
+			print(commodityPage[i])
+		}
+		
 		for (var i = 0; i < commodityPage.length; i++) {
 			if (commodityPage[i].toLowerCase().includes("maximum selling stations")) {
 
