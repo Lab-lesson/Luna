@@ -10,7 +10,7 @@ exports.run = async(client, message, args, level) => {
 		//},
 		"fields": [{
 				"name": "EDDB Links:",
-				"value": "System: https://eddb.io/system/268\nStation: https://eddb.io/station/1521"
+				"value": "System: https://eddb.io/system/17072"
 			}, 
 		]
 		
