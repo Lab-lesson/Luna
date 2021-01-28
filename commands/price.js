@@ -328,9 +328,18 @@ exports.run = async(client, message, args, level) => {
 		"fields": [{
 				"name": `Information on ${name}`,
 				"value": `Max Sell Price: **${MaxSell}** credits\nMin Sell Price: **${MinSell}** credits\n\nMax Buy Price: **${MaxBuy}**\nMin Buy Price: **${MinBuy}**\n\nMax Profit: **${MaxProfit}**\n\nAverage Price: **${averagePrice}** credits\n\nType of Commodity: **${type}**\n\n`
+<<<<<<< HEAD
 			}, {
 				"text": 'Maximum Selling Stations'
+=======
+			}
+		],
+			   
+		"fields_sell": [{
+				"name": 'Maximum Selling Stations'
+>>>>>>> parent of 209f7e4... Update price.js
 			}, {
+			
 				"name": "1",
 				"value": `**[${system1[1].replace("&#039;", "'")}](https://eddb.io${system1webpage[1]})**\n[${station1[1].replace("&#039;", "'")}](https://eddb.io${station1webpage[1]})\nPrice: **${currentPrice1[1]}**\nDemand: **${demand1[1]}**\nPad: **${landingPad1[1]}**\nLast Updated: **${lastUpdate1[1]}**`,
 				"inline": true
@@ -342,8 +351,17 @@ exports.run = async(client, message, args, level) => {
 				"name": "3",
 				"value": `**[${system3[1].replace("&#039;", "'")}](https://eddb.io${system3webpage[1]})**\n[${station3[1].replace("&#039;", "'")}](https://eddb.io${station3webpage[1]})\nPrice: **${currentPrice3[1]}**\nDemand: **${demand3[1]}**\nPad: **${landingPad3[1]}**\nLast Updated: **${lastUpdate3[1]}**`,
 				"inline": true
+<<<<<<< HEAD
 			}, {
 				"text": 'Minimum Buying Stations'
+=======
+			}
+		],
+										   
+										   
+		"fields_buy": [{
+				"name": 'Minimum Buying Stations'
+>>>>>>> parent of 209f7e4... Update price.js
 			}, {
 				"name": "1",
 				"value": `**[${system4[1].replace("&#039;", "'")}](https://eddb.io${system4webpage[1]})**\n[${station4[1].replace("&#039;", "'")}](https://eddb.io${station4webpage[1]})\nPrice: **${currentPrice4[1]}**\nDemand: **${demand4[1]}**\nPad: **${landingPad4[1]}**\nLast Updated: **${lastUpdate4[1]}**`,
