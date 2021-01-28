@@ -330,9 +330,12 @@ exports.run = async(client, message, args, level) => {
 				"value": `Max Sell Price: **${MaxSell}** credits\nMin Sell Price: **${MinSell}** credits\n\nMax Buy Price: **${MaxBuy}**\nMin Buy Price: **${MinBuy}**\n\nMax Profit: **${MaxProfit}**\n\nAverage Price: **${averagePrice}** credits\n\nType of Commodity: **${type}**\n\n`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			}, {
 				"text": 'Maximum Selling Stations'
 =======
+=======
+>>>>>>> parent of 209f7e4... Update price.js
 =======
 >>>>>>> parent of 209f7e4... Update price.js
 			}
@@ -356,9 +359,12 @@ exports.run = async(client, message, args, level) => {
 				"inline": true
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			}, {
 				"text": 'Minimum Buying Stations'
 =======
+=======
+>>>>>>> parent of 209f7e4... Update price.js
 =======
 >>>>>>> parent of 209f7e4... Update price.js
 			}
