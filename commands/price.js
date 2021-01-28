@@ -351,15 +351,15 @@ exports.run = async(client, message, args, level) => {
 				"inline": false
 			}, {
 				"name": "1",
-				"value": `**[${system4[1].replace("&#039;", "'")}](https://eddb.io${system4webpage[1]})**\n[${station4[1].replace("&#039;", "'")}](https://eddb.io${station4webpage[1]})\nPrice: **${currentPrice4[1]}**\nDemand: **${demand4[1]}**\nPad: **${landingPad4[1]}**\nLast Updated: **${lastUpdate4[1]}**`,
+				"value": `**[${system4[1].replace("&#039;", "'")}](https://eddb.io${system4webpage[1]})**\n[${station4[1].replace("&#039;", "'")}](https://eddb.io${station4webpage[1]})\nPrice: **${currentPrice4[1]}**\nSupply: **${demand4[1]}**\nPad: **${landingPad4[1]}**\nLast Updated: **${lastUpdate4[1]}**`,
 				"inline": true
 			}, {
 				"name": "2",
-				"value": `**[${system5[1].replace("&#039;", "'")}](https://eddb.io${system5webpage[1]})**\n[${station5[1].replace("&#039;", "'")}](https://eddb.io${station5webpage[1]})\nPrice: **${currentPrice5[1]}**\nDemand: **${demand5[1]}**\nPad: **${landingPad5[1]}**\nLast Updated: **${lastUpdate5[1]}**`,
+				"value": `**[${system5[1].replace("&#039;", "'")}](https://eddb.io${system5webpage[1]})**\n[${station5[1].replace("&#039;", "'")}](https://eddb.io${station5webpage[1]})\nPrice: **${currentPrice5[1]}**\nSupply: **${demand5[1]}**\nPad: **${landingPad5[1]}**\nLast Updated: **${lastUpdate5[1]}**`,
 				"inline": true
 			}, {
 				"name": "3",
-				"value": `**[${system6[1].replace("&#039;", "'")}](https://eddb.io${system6webpage[1]})**\n[${station6[1].replace("&#039;", "'")}](https://eddb.io${station6webpage[1]})\nPrice: **${currentPrice6[1]}**\nDemand: **${demand6[1]}**\nPad: **${landingPad6[1]}**\nLast Updated: **${lastUpdate6[1]}**`,
+				"value": `**[${system6[1].replace("&#039;", "'")}](https://eddb.io${system6webpage[1]})**\n[${station6[1].replace("&#039;", "'")}](https://eddb.io${station6webpage[1]})\nPrice: **${currentPrice6[1]}**\nSupply: **${demand6[1]}**\nPad: **${landingPad6[1]}**\nLast Updated: **${lastUpdate6[1]}**`,
 				"inline": true
 			}
 		]
