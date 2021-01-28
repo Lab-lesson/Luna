@@ -75,6 +75,7 @@ exports.run = async(client, message, args, level) => {
 		}
 
 		/*=========================*/
+		// For max sell stations
 		var system1 = ""
 		var system1webpage = ""
 		var station1 = ""
@@ -101,6 +102,34 @@ exports.run = async(client, message, args, level) => {
 		var demand3 = ""
 		var landingPad3 = ""
 		var lastUpdate3 = ""
+		
+		// For min buy stations
+		var system4 = ""
+		var system4webpage = ""
+		var station4 = ""
+		var station4webpage = ""
+		var currentPrice4 = ""
+		var demand4 = ""
+		var landingPad4 = ""
+		var lastUpdate4 = ""
+
+		var system5 = ""
+		var system5webpage = ""
+		var station5 = ""
+		var station5webpage = ""
+		var currentPrice5 = ""
+		var demand5 = ""
+		var landingPad5 = ""
+		var lastUpdate5 = ""
+
+		var system6 = ""
+		var system6webpage = ""
+		var station6 = ""
+		var station6webpage = ""
+		var currentPrice6 = ""
+		var demand6 = ""
+		var landingPad6 = ""
+		var lastUpdate6 = ""
 
 		/*=========================*/
 
@@ -194,6 +223,97 @@ exports.run = async(client, message, args, level) => {
 
 			}
 		}
+	
+		var commodityPage = price(commID)
+		commodityPage = commodityPage.split("\n")
+		var count = 0
+		for (var i = 0; i < commodityPage.length; i++) {
+			if (commodityPage[i].toLowerCase().includes("minimum buying stations")) {
+
+				system4 = commodityPage[i + 23].split("<")
+					system4 = system4[1].split(">")
+					system4webpage = commodityPage[i + 23].split("\"")
+					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
+
+					station4 = commodityPage[i + 21].split("<")
+					station4 = station4[1].split(">")
+					station4webpage = commodityPage[i + 21].split("\"")
+
+					// output += "\nStation :: " + station[1].replace("&#039;", "'")
+
+					currentPrice4 = commodityPage[i + 25].split("<")
+					currentPrice4 = currentPrice4[1].split(">")
+					// output += "\nCurrent Price :: " + currentPrice[1].replace("&#039;", "'")
+
+					demand4 = commodityPage[i + 31].split("<")
+					demand4 = demand4[1].split(">")
+					// output += "\nDemand :: " + demand[1].replace("&#039;", "'")
+
+					landingPad4 = commodityPage[i + 34].split("<")
+					landingPad4 = landingPad4[1].split(">")
+					// output += "\nLanding Pad :: " + landingPad[1].replace("&#039;", "'")
+
+					lastUpdate4 = commodityPage[i + 38].split("<")
+					lastUpdate4 = lastUpdate4[0].split(">")
+					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
+
+					/*====================================================================*/
+
+					system5 = commodityPage[i + 45].split("<")
+					system5 = system5[1].split(">")
+					system5webpage = commodityPage[i + 45].split("\"")
+					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
+
+					station5 = commodityPage[i + 43].split("<")
+					station5 = station5[1].split(">")
+					station5webpage = commodityPage[i + 43].split("\"")
+					// output += "\nStation :: " + station[1].replace("&#039;", "'")
+
+					currentPrice5 = commodityPage[i + 47].split("<")
+					currentPrice5 = currentPrice5[1].split(">")
+					// output += "\nCurrent Price :: " + currentPrice[1].replace("&#039;", "'")
+
+					demand5 = commodityPage[i + 53].split("<")
+					demand5 = demand5[1].split(">")
+					// output += "\nDemand :: " + demand[1].replace("&#039;", "'")
+
+					landingPad5 = commodityPage[i + 56].split("<")
+					landingPad5 = landingPad5[1].split(">")
+					// output += "\nLanding Pad :: " + landingPad[1].replace("&#039;", "'")
+
+					lastUpdate5 = commodityPage[i + 60].split("<")
+					lastUpdate5 = lastUpdate5[0].split(">")
+					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
+					/*====================================================================*/
+
+					system6 = commodityPage[i + 67].split("<")
+					system6 = system6[1].split(">")
+					system6webpage = commodityPage[i + 67].split("\"")
+					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
+
+					station6 = commodityPage[i + 65].split("<")
+					station6 = station6[1].split(">")
+					station6webpage = commodityPage[i + 65].split("\"")
+					// output += "\nStation :: " + station[1].replace("&#039;", "'")
+
+					currentPrice6 = commodityPage[i + 69].split("<")
+					currentPrice6 = currentPrice6[1].split(">")
+					// output += "\nCurrent Price :: " + currentPrice[1].replace("&#039;", "'")
+
+					demand6 = commodityPage[i + 75].split("<")
+					demand6 = demand6[1].split(">")
+					// output += "\nDemand :: " + demand[1].replace("&#039;", "'")
+
+					landingPad6 = commodityPage[i + 78].split("<")
+					landingPad6 = landingPad6[1].split(">")
+					// output += "\nLanding Pad :: " + landingPad[1].replace("&#039;", "'")
+
+					lastUpdate6 = commodityPage[i + 82].split("<")
+					lastUpdate6 = lastUpdate6[0].split(">")
+					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
+
+			}
+		}
 
 		const embed = {
 		"title": "Click me for EDDB Page",
@@ -208,7 +328,13 @@ exports.run = async(client, message, args, level) => {
 		"fields": [{
 				"name": `Information on ${name}`,
 				"value": `Max Sell Price: **${MaxSell}** credits\nMin Sell Price: **${MinSell}** credits\n\nMax Buy Price: **${MaxBuy}**\nMin Buy Price: **${MinBuy}**\n\nMax Profit: **${MaxProfit}**\n\nAverage Price: **${averagePrice}** credits\n\nType of Commodity: **${type}**\n\n`
+			}
+		],
+			   
+		"fields_sell": [{
+				"name": 'Maximum Selling Stations'
 			}, {
+			
 				"name": "1",
 				"value": `**[${system1[1].replace("&#039;", "'")}](https://eddb.io${system1webpage[1]})**\n[${station1[1].replace("&#039;", "'")}](https://eddb.io${station1webpage[1]})\nPrice: **${currentPrice1[1]}**\nDemand: **${demand1[1]}**\nPad: **${landingPad1[1]}**\nLast Updated: **${lastUpdate1[1]}**`,
 				"inline": true
@@ -221,7 +347,26 @@ exports.run = async(client, message, args, level) => {
 				"value": `**[${system3[1].replace("&#039;", "'")}](https://eddb.io${system3webpage[1]})**\n[${station3[1].replace("&#039;", "'")}](https://eddb.io${station3webpage[1]})\nPrice: **${currentPrice3[1]}**\nDemand: **${demand3[1]}**\nPad: **${landingPad3[1]}**\nLast Updated: **${lastUpdate3[1]}**`,
 				"inline": true
 			}
+		],
+										   
+										   
+		"fields_buy": [{
+				"name": 'Minimum Buying Stations'
+			}, {
+				"name": "1",
+				"value": `**[${system4[1].replace("&#039;", "'")}](https://eddb.io${system4webpage[1]})**\n[${station4[1].replace("&#039;", "'")}](https://eddb.io${station4webpage[1]})\nPrice: **${currentPrice4[1]}**\nDemand: **${demand4[1]}**\nPad: **${landingPad4[1]}**\nLast Updated: **${lastUpdate4[1]}**`,
+				"inline": true
+			}, {
+				"name": "2",
+				"value": `**[${system5[1].replace("&#039;", "'")}](https://eddb.io${system5webpage[1]})**\n[${station5[1].replace("&#039;", "'")}](https://eddb.io${station5webpage[1]})\nPrice: **${currentPrice5[1]}**\nDemand: **${demand5[1]}**\nPad: **${landingPad5[1]}**\nLast Updated: **${lastUpdate5[1]}**`,
+				"inline": true
+			}, {
+				"name": "3",
+				"value": `**[${system6[1].replace("&#039;", "'")}](https://eddb.io${system6webpage[1]})**\n[${station6[1].replace("&#039;", "'")}](https://eddb.io${station6webpage[1]})\nPrice: **${currentPrice6[1]}**\nDemand: **${demand6[1]}**\nPad: **${landingPad6[1]}**\nLast Updated: **${lastUpdate6[1]}**`,
+				"inline": true
+			}
 		]
+			
 	};
 	message.channel.send({
 		embed
