@@ -38,7 +38,7 @@ exports.run = async(client, message, args, level) => { // eslint-disable-line no
 		return JSON.parse(httpGet(uri));
 	}
 
-	var sys1 = coords("59 virginis");
+	var sys1 = coords("Sol");
 	var sys2 = coords(place.system);
 
 	var distance = Math.sqrt(Math.pow((sys2["coords"]["x"] - sys1["coords"]["x"]), 2)
