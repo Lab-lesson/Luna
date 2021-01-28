@@ -230,30 +230,30 @@ exports.run = async(client, message, args, level) => {
 		for (var i = 0; i < commodityPage.length; i++) {
 			if (commodityPage[i].toLowerCase().includes("minimum buying stations")) {
 
-				system4 = commodityPage[i + 23].split("<")
+				system4 = commodityPage[i + 21].split("<")
 					system4 = system4[1].split(">")
-					system4webpage = commodityPage[i + 23].split("\"")
+					system4webpage = commodityPage[i + 21].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
 
-					station4 = commodityPage[i + 21].split("<")
+					station4 = commodityPage[i + 19].split("<")
 					station4 = station4[1].split(">")
-					station4webpage = commodityPage[i + 21].split("\"")
+					station4webpage = commodityPage[i + 19].split("\"")
 
 					// output += "\nStation :: " + station[1].replace("&#039;", "'")
 
-					currentPrice4 = commodityPage[i + 25].split("<")
+					currentPrice4 = commodityPage[i + 23].split("<")
 					currentPrice4 = currentPrice4[1].split(">")
 					// output += "\nCurrent Price :: " + currentPrice[1].replace("&#039;", "'")
 
-					demand4 = commodityPage[i + 31].split("<")
+					demand4 = commodityPage[i + 29].split("<")
 					demand4 = demand4[1].split(">")
 					// output += "\nDemand :: " + demand[1].replace("&#039;", "'")
 
-					landingPad4 = commodityPage[i + 34].split("<")
+					landingPad4 = commodityPage[i + 32].split("<")
 					landingPad4 = landingPad4[1].split(">")
 					// output += "\nLanding Pad :: " + landingPad[1].replace("&#039;", "'")
 
-					lastUpdate4 = commodityPage[i + 38].split("<")
+					lastUpdate4 = commodityPage[i + 36].split("<")
 					lastUpdate4 = lastUpdate4[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
 
