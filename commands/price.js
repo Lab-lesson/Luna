@@ -375,7 +375,7 @@ exports.run = async(client, message, args, level) => {
 		};
 	} else {
 		var embed = {
-			"Name": "You cannot buy"
+			"name": "You cannot buy"
 		};
 	}
 		
