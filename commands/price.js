@@ -43,6 +43,7 @@ exports.run = async(client, message, args, level) => {
 		//var comms = JSON.parse(fs.readFileSync("./commandStorage/commodities.json", "utf8"));
 		var comms = JSON.parse(httpGet("https://eddb.io/archive/v6/commodities.json"))
 	var commID = -1
+	var buyable = 1  // Flag to indicate if commodity can be bought from station. 0 for no. 1 for yes (default)
 		var name = ""
 		for (var i = 0; i < comms.length; i++) {
 			if (comms[i]["name"].toLowerCase() == argu.trim().toLowerCase()) {
@@ -51,12 +52,14 @@ exports.run = async(client, message, args, level) => {
 					averagePrice = comms[i]["average_price"]
 					if (comms[i]["min_buy_price"] == null) {
 						MinBuy = "Cannot Buy from Stations"
+						buyable = 0
 					} else {
 						MinBuy = comms[i]["min_buy_price"]
 					}
 
 					if (comms[i]["max_buy_price"] == null) {
 						MaxBuy = "Cannot Buy from Stations"
+						buyable = 0
 					} else {
 						MaxBuy = comms[i]["max_buy_price"]
 					}
@@ -325,6 +328,8 @@ exports.run = async(client, message, args, level) => {
 		"author": {
 			"name": `${name}`
 		},
+		"if": { "buyable": 1},
+		"then": {
 		"fields": [{
 				"name": `Information on ${name}`,
 				"value": `Max Sell Price: **${MaxSell}** credits\nMin Sell Price: **${MinSell}** credits\n\nMax Buy Price: **${MaxBuy}**\nMin Buy Price: **${MinBuy}**\n\nMax Profit: **${MaxProfit}**\n\nAverage Price: **${averagePrice}** credits\n\nType of Commodity: **${type}**\n\n`
@@ -362,7 +367,34 @@ exports.run = async(client, message, args, level) => {
 				"value": `**[${system6[1].replace("&#039;", "'")}](https://eddb.io${system6webpage[1]})**\n[${station6[1].replace("&#039;", "'")}](https://eddb.io${station6webpage[1]})\nPrice: **${currentPrice6[1]}**\nSupply: **${demand6[1]}**\nPad: **${landingPad6[1]}**\nLast Updated: **${lastUpdate6[1]}**`,
 				"inline": true
 			}
-		]
+		] },
+		"else": {
+		"fields": [{
+				"name": `Information on ${name}`,
+				"value": `Max Sell Price: **${MaxSell}** credits\nMin Sell Price: **${MinSell}** credits\n\nMax Buy Price: **${MaxBuy}**\nMin Buy Price: **${MinBuy}**\n\nMax Profit: **${MaxProfit}**\n\nAverage Price: **${averagePrice}** credits\n\nType of Commodity: **${type}**\n\n`
+
+			}, {
+				"name": 'Maximum Selling Stations',
+				"inline": false
+			}, {
+			
+				"name": "1",
+				"value": `**[${system1[1].replace("&#039;", "'")}](https://eddb.io${system1webpage[1]})**\n[${station1[1].replace("&#039;", "'")}](https://eddb.io${station1webpage[1]})\nPrice: **${currentPrice1[1]}**\nDemand: **${demand1[1]}**\nPad: **${landingPad1[1]}**\nLast Updated: **${lastUpdate1[1]}**`,
+				"inline": true
+			}, {
+				"name": "2",
+				"value": `**[${system2[1].replace("&#039;", "'")}](https://eddb.io${system2webpage[1]})**\n[${station2[1].replace("&#039;", "'")}](https://eddb.io${station2webpage[1]})\nPrice: **${currentPrice2[1]}**\nDemand: **${demand2[1]}**\nPad: **${landingPad2[1]}**\nLast Updated: **${lastUpdate2[1]}**`,
+				"inline": true
+			}, {
+				"name": "3",
+				"value": `**[${system3[1].replace("&#039;", "'")}](https://eddb.io${system3webpage[1]})**\n[${station3[1].replace("&#039;", "'")}](https://eddb.io${station3webpage[1]})\nPrice: **${currentPrice3[1]}**\nDemand: **${demand3[1]}**\nPad: **${landingPad3[1]}**\nLast Updated: **${lastUpdate3[1]}**`,
+				"inline": true
+
+			}, {
+				"name": 'Minimum Buying Stations',
+				"inline": false
+			}
+		]}
 			
 	};
 	message.channel.send({
