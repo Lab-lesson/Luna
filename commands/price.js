@@ -227,7 +227,7 @@ exports.run = async(client, message, args, level) => {
 			}
 		}
 		
-	if (buyable) {
+	if (buyable == 1) {
 		var commodityPage = price(commID)
 		commodityPage = commodityPage.split("\n")
 		var count = 0
@@ -319,8 +319,9 @@ exports.run = async(client, message, args, level) => {
 				}
 			}
 		}
+	
 	if (buyable) {
-		const embed = {
+		const embed = [
 		"title": "Click me for EDDB Page",
 		"url": `https://eddb.io/commodity/${commID}`,
 		"color": 7864575,
@@ -369,7 +370,7 @@ exports.run = async(client, message, args, level) => {
 				"inline": true
 			}
 			]
-		};
+		];
 	}
 
 	message.channel.send({
