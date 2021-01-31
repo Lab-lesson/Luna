@@ -371,6 +371,11 @@ exports.run = async(client, message, args, level) => {
 			}
 			]
 		};
+		
+		message.channel.send({
+		embed
+		});
+		
 	} else {
 		var embed = {
 		"title": "Click me for EDDB Page",
@@ -411,12 +416,13 @@ exports.run = async(client, message, args, level) => {
 			}
 			]
 		};
-	}
+	
 		
-									
-	message.channel.send({
+		message.channel.send({
 		embed
-	});
+		});	
+		
+	}
 
 	//message.channel.send(output,{code :"asciidoc"})
 
