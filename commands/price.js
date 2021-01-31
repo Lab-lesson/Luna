@@ -226,7 +226,8 @@ exports.run = async(client, message, args, level) => {
 
 			}
 		}
-	
+		
+	if (buyable == 1) {
 		var commodityPage = price(commID)
 		commodityPage = commodityPage.split("\n")
 		var count = 0
@@ -315,6 +316,7 @@ exports.run = async(client, message, args, level) => {
 					lastUpdate6 = lastUpdate6[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
 
+				}
 			}
 		}
 
