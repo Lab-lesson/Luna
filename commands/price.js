@@ -352,7 +352,9 @@ exports.run = async(client, message, args, level) => {
 				"value": `**[${system3[1].replace("&#039;", "'")}](https://eddb.io${system3webpage[1]})**\n[${station3[1].replace("&#039;", "'")}](https://eddb.io${station3webpage[1]})\nPrice: **${currentPrice3[1]}**\nDemand: **${demand3[1]}**\nPad: **${landingPad3[1]}**\nLast Updated: **${lastUpdate3[1]}**`,
 				"inline": true
 
-			}, {
+			}] 
+			   
+/*			   {
 				"name": 'Minimum Buying Stations',
 				"inline": false
 			}, {
@@ -368,7 +370,7 @@ exports.run = async(client, message, args, level) => {
 				"value": `**[${system6[1].replace("&#039;", "'")}](https://eddb.io${system6webpage[1]})**\n[${station6[1].replace("&#039;", "'")}](https://eddb.io${station6webpage[1]})\nPrice: **${currentPrice6[1]}**\nSupply: **${demand6[1]}**\nPad: **${landingPad6[1]}**\nLast Updated: **${lastUpdate6[1]}**`,
 				"inline": true
 			}
-			]
+			]*/
 		};
 		
 
