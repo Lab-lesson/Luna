@@ -333,9 +333,12 @@ exports.run = async(client, message, args, level) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			}, {
 				"text": 'Maximum Selling Stations'
 =======
+=======
+>>>>>>> parent of 209f7e4... Update price.js
 =======
 >>>>>>> parent of 209f7e4... Update price.js
 =======
@@ -368,9 +371,12 @@ exports.run = async(client, message, args, level) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			}, {
 				"text": 'Minimum Buying Stations'
 =======
+=======
+>>>>>>> parent of 209f7e4... Update price.js
 =======
 >>>>>>> parent of 209f7e4... Update price.js
 =======
