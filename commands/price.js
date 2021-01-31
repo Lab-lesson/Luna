@@ -320,6 +320,7 @@ exports.run = async(client, message, args, level) => {
 			}
 		}
 	
+	if (buyable) {
 		var embed = {
 		"title": "Click me for EDDB Page",
 		"url": `https://eddb.io/commodity/${commID}`,
@@ -372,6 +373,7 @@ exports.run = async(client, message, args, level) => {
 			}
 			]*/
 		};
+	}
 		
 
 	message.channel.send({
