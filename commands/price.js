@@ -335,15 +335,6 @@ exports.run = async(client, message, args, level) => {
 				"value": `Max Sell Price: **${MaxSell}** credits\nMin Sell Price: **${MinSell}** credits\n\nMax Buy Price: **${MaxBuy}**\nMin Buy Price: **${MinBuy}**\n\nMax Profit: **${MaxProfit}**\n\nAverage Price: **${averagePrice}** credits\n\nType of Commodity: **${type}**\n\n`
 
 			}, {
-				"text": 'Maximum Selling Stations'
-
-			}
-		],
-			   
-		"fields_sell": [{
-				"name": 'Maximum Selling Stations'
-
-			}, {
 				"name": 'Maximum Selling Stations',
 				"inline": false
 
@@ -360,9 +351,6 @@ exports.run = async(client, message, args, level) => {
 				"name": "3",
 				"value": `**[${system3[1].replace("&#039;", "'")}](https://eddb.io${system3webpage[1]})**\n[${station3[1].replace("&#039;", "'")}](https://eddb.io${station3webpage[1]})\nPrice: **${currentPrice3[1]}**\nDemand: **${demand3[1]}**\nPad: **${landingPad3[1]}**\nLast Updated: **${lastUpdate3[1]}**`,
 				"inline": true
-
-			}, {
-				"text": 'Minimum Buying Stations'
 
 			}, {
 				"name": 'Minimum Buying Stations',
