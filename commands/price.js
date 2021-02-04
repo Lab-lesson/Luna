@@ -234,9 +234,9 @@ exports.run = async(client, message, args, level) => {
 		for (var i = 0; i < commodityPage.length; i++) {
 			if (commodityPage[i].toLowerCase().includes("minimum buying stations")) {
 
-				system4 = commodityPage[i + 22].split("<")
-				if (system4) {
-					system4 = system4[1].split(">")
+				var system4_ini = commodityPage[i + 22].split("<")
+				if (system4_ini) {
+					system4 = system4_ini[1].split(">")
 					system4webpage = commodityPage[i + 22].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
 
@@ -265,9 +265,9 @@ exports.run = async(client, message, args, level) => {
 
 					/*====================================================================*/
 
-				system5 = commodityPage[i + 43].split("<")
-				if (system5) {
-					system5 = system5[1].split(">")
+				var system5_ini = commodityPage[i + 43].split("<")
+				if (system5_ini) {
+					system5 = system5_ini[1].split(">")
 					system5webpage = commodityPage[i + 43].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
 
@@ -294,9 +294,9 @@ exports.run = async(client, message, args, level) => {
 				}
 					/*====================================================================*/
 
-				system6 = commodityPage[i + 64].split("<")
-				if (system6) {
-					system6 = system6[1].split(">")
+				var system6_ini = commodityPage[i + 64].split("<")
+				if (system6_ini) {
+					system6 = system6_ini[1].split(">")
 					system6webpage = commodityPage[i + 64].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
 
