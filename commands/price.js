@@ -235,6 +235,7 @@ exports.run = async(client, message, args, level) => {
 			if (commodityPage[i].toLowerCase().includes("minimum buying stations")) {
 
 				system4 = commodityPage[i + 22].split("<")
+				if (system4) {
 					system4 = system4[1].split(">")
 					system4webpage = commodityPage[i + 22].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
@@ -260,10 +261,12 @@ exports.run = async(client, message, args, level) => {
 					lastUpdate4 = commodityPage[i + 36].split("<")
 					lastUpdate4 = lastUpdate4[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
+				}
 
 					/*====================================================================*/
 
-					system5 = commodityPage[i + 43].split("<")
+				system5 = commodityPage[i + 43].split("<")
+				if (system5) {
 					system5 = system5[1].split(">")
 					system5webpage = commodityPage[i + 43].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
@@ -288,9 +291,11 @@ exports.run = async(client, message, args, level) => {
 					lastUpdate5 = commodityPage[i + 56].split("<")
 					lastUpdate5 = lastUpdate5[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
+				}
 					/*====================================================================*/
 
-					system6 = commodityPage[i + 64].split("<")
+				system6 = commodityPage[i + 64].split("<")
+				if (system6) {
 					system6 = system6[1].split(">")
 					system6webpage = commodityPage[i + 64].split("\"")
 					// output += "\n\nSystem :: " + system[1].replace("&#039;", "'")
@@ -315,6 +320,7 @@ exports.run = async(client, message, args, level) => {
 					lastUpdate6 = commodityPage[i + 82].split("<")
 					lastUpdate6 = lastUpdate6[0].split(">")
 					// output += "\nLast Updated :: " + lastUpdate[1].replace("&#039;", "'")
+				}
 
 				}
 			}
