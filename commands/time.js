@@ -56,8 +56,9 @@ exports.run = async(client, message, args, level) => {
 		message.channel.send(output, {
 			code: "md"
 		})
-};
 */
+};
+
 exports.conf = {
 	enabled: true,
 	guildOnly: true,
