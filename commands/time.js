@@ -1,8 +1,8 @@
 var moment = require("moment");
 exports.run = async(client, message, args, level) => {
-	output = "# The Alchemy Calendar #"
+//	output = "# The Alchemy Calendar #"
 		output += "\nGalactic Standard Time :: < " + moment().utcOffset('+0000').format("HH:mm:ss, MMMM Do, ") + (Number(moment().format("YYYY")) + 1286).toString() + " >"
-	function n(n) {
+/*	function n(n) {
 		return n > 9 ? "" + n : "0" + n;
 	}
 	var map = {
@@ -57,7 +57,7 @@ exports.run = async(client, message, args, level) => {
 			code: "md"
 		})
 };
-
+*/
 exports.conf = {
 	enabled: true,
 	guildOnly: true,
@@ -68,6 +68,6 @@ exports.conf = {
 exports.help = {
 	name: "time",
 	category: "Custom Commands",
-	description: "Shows the current 59 Virginis Time and Calendar, among a few other things",
+	description: "Shows the current time in-game (UTC-0)",
 	usage: "time"
 };
